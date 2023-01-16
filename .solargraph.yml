@@ -9,9 +9,8 @@ exclude:
 require: []
 domains: []
 reporters:
-- rubocop
+- standardrb
 - require_not_found
-- solargraph-rails
 formatter:
   rubocop:
     cops: safe
@@ -19,5 +18,7 @@ formatter:
     only: []
     extra_args: []
 require_paths: []
-plugins: []
+plugins:
+- solargraph-standardrb
+- solargraph-rails
 max_files: 5000
