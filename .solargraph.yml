@@ -9,8 +9,9 @@ exclude:
 require: []
 domains: []
 reporters:
-- standardrb
+- rubocop
 - require_not_found
+- typecheck
 formatter:
   rubocop:
     cops: safe
