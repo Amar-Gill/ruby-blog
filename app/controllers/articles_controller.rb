@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+
   # Rails will automatically render a view that matches
   # the name of the controller and action
   def index
